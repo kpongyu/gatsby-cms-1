@@ -1,6 +1,10 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `My Gatsby Site`,
@@ -13,5 +17,13 @@ module.exports = {
       "path": "./src/assets/images/"
     },
     __key: "images"
-  }]
+  }, {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `fvenbhl497ip`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_API_KEY,
+      },
+    }
+]
 };
