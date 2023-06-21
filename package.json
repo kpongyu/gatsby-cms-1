@@ -19,7 +19,7 @@
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-sass": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
-    "gatsby-source-contentful": "^8.10.0",
+    "gatsby-source-contentful": "^8.11.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "gsap": "^3.12.0",
